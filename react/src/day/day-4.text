@@ -1,0 +1,9 @@
+Day 4 (1.5 hr)
+
+0–45 min: useRef, useMemo, useCallback
+
+1. useRef => useRef react hook provide state update without render. it's help use to 
+2. useMemo => useMemo react hook use to avaoid expensive calculation. which help use to improve profamemce.
+3. useCallback => useCallback react hook use to stop recreating function in reach render and improve profromence.
+
+45–90 min: Write a custom hook for form input handling
