@@ -1,0 +1,36 @@
+0–45 min: Conditional rendering, lists & keys
+
+
+// conditional rendering //
+
+{1==0?<div>true</div>:<div> false</div}
+
+const conditionalRendering= ()=>{
+     const [condition, setCondition] = useState("");
+     // write condition's here
+
+    return (
+        <>
+
+        </>
+    )
+}
+
+45–90 min: Mini coding: render dynamic list with conditional styles
+
+const list = [{name:"sita",last:"ram"},{name:"sita",last:"ram"},]
+
+const ItemList = (list)=>{
+    return(
+     <>
+     {list.map((item,key)=>{
+         <div key={key} styles={{color:{`#fffff${key}`}}}>
+           {item.name} {item.last}
+         </div>
+     })}
+     </>
+    )
+}
+
+<ItemList list={list}/>
+
