@@ -1,0 +1,35 @@
+Date: 26/11/2025
+
+0–45 min: Forms: controlled vs uncontrolled, validation basics
+Controlled :- Controlled forms are, which state can be update and controlled the events of form, store to use base on requirement.
+uncontrolled:- uncontrolled form are, that use to prasent form data to user, where we don't have control on event and can not update the date.  
+
+Uncontrolled Forms
+
+Uncontrolled forms are inputs whose values are managed by the DOM, not React.
+
+Key Points
+
+Value stored internally by the input element.
+
+Accessed using ref.
+
+React does not control the value.
+
+Useful for simple or performance-sensitive forms.
+
+Controlled Forms
+
+Controlled forms are inputs whose values are managed by React state.
+
+Key Points
+
+Value is stored in React state.
+
+Updated using onChange handlers.
+
+React always knows the current input value.
+
+Easy to add validation, formatting, or conditional logic.
+
+45–90 min:- Mini project: input form with validation
