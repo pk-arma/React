@@ -13,13 +13,11 @@ export const useForm  = ({initisialState,validationSchema})=>{
          const values  =   Object.values(validationSchema)
          for (const [key, value] of Object.entries(validationSchema)) {
             //    console.log("formData[key]",formData?.[key])
-             if(!formData[key] ){
-                 console.log(`${key}: ${value}`);
-                 obj[key] = value     
-              }
-}
-        //   console.log(keys,data,values)
-         return data;
+                 console.log(`${key}: ${value}`,formData[key]);
+               obj[key]= value(formData[key])    
+          }
+          console.log("obj",obj)
+         return obj;
     }
     return  {formData,resetForm, onChange,setFormData,errors}
 }

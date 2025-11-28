@@ -4,15 +4,15 @@ import { useForm } from './hooks/formHooks'
 function Forms() {
   const initisialState = {firstName:"",lastName:"",date:"",dis:""}
    const validationSchema = {
-     firstName:[true,"First Name is required"],
-     lastName:[true,"Last Name is required"],
-     date:[true,"Date is required"],
-     dis:[true,'Discripation is required'],
+     firstName:(value)=>  (value===""?'first name is required':""),
+     lastName:(value)=>value===""?"lastName is required":"",
+    //  date:[true,"Date is required"],
+    //  dis:[true,'Discripation is required'],
    }   
-  
+
   const {onChange,formData,resetForm,errors} = useForm({initisialState,validationSchema})
         const data  = errors();
-  console.log('formData',data)
+  console.log('formData',data,)
       
 
   return (
