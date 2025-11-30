@@ -1,311 +1,545 @@
-Week 1: Core React Refresh & Advanced Concepts
-Day 1 (1.5 hr)
+Day 1 — React Basics (1.5 hr)
 
+Topics:
 
-0–45 min: React basics (JSX, virtual DOM, functional vs class components)
+JSX syntax, rules
 
+Virtual DOM vs Real DOM
 
-45–90 min: Props & state, event handling, simple examples
+Component types (Functional vs Class)
 
+React rendering process (reconciliation)
 
-Day 2 (1.5 hr)
+Task: Convert simple HTML UI to React.
 
+Interview Questions:
 
-0–45 min: Conditional rendering, lists & keys
+What is JSX?
 
+How does Virtual DOM improve performance?
 
-45–90 min: Mini coding: render dynamic list with conditional styles
+Why is React declarative?
 
-Day 3 (1.5 hr)
+Day 2 — Props, State & Event Handling (1.5 hr)
 
+Topics:
 
-0–45 min: Class component lifecycle methods
+Passing & validating props
 
+Managing local state
 
-45–90 min: Hooks useState & useEffect, simple useEffect demo
+Handling events in React
 
+Task: Build a counter component.
 
-Day 4 (1.5 hr)
+Interview Questions:
 
+Why is state immutable?
 
-0–45 min: useRef, useMemo, useCallback
+Difference between props & state?
 
+Day 3 — Conditional Rendering, Lists & Keys (1.5 hr)
 
-45–90 min: Write a custom hook for form input handling
+Topics:
 
+Conditional UI patterns
 
-Day 5 (1.5 hr)
+Rendering lists
 
+Why keys matter & pitfalls of using index
 
-0–45 min: Forms: controlled vs uncontrolled, validation basics
+Task: Dynamic list with conditional styling.
 
+Interview Questions:
 
-45–90 min: Mini project: input form with validation
+Why index key is harmful?
 
+How does React match list items?
 
-Day 6 (1.5 hr)
+Day 4 — Lifecycle & useEffect (1.5 hr)
 
+Topics:
 
-0–45 min: Error boundaries & Suspense
+Component lifecycle overview (class)
 
+useState & useEffect
 
-45–90 min: Lazy loading a component with fallback UI
+Effect cleanup & dependency array
 
+Task: Fetch & display data.
 
-Day 7 (2 hr)
+Interview Questions:
 
+Why does useEffect run twice in strict mode?
 
-Build a small Todo app
+What happens with empty dependency array?
 
+Day 5 — useRef, useMemo, useCallback + Custom Hooks (1.5 hr)
 
-Include: state, hooks, conditional rendering, error boundary, lazy loading
+Topics:
 
+useRef (DOM + persistent values)
 
+useMemo & useCallback optimization
 
-Week 2: State Management & Routing
-Day 8 (1.5 hr)
+Building custom hooks
 
+Task: Build custom useForm hook.
 
-0–45 min: Lifting state up & Context API overview
+Interview Questions:
 
+useMemo vs useCallback?
 
-45–90 min: Context API practice with theme toggle
+ref vs state?
 
+Day 6 — Forms + Validation (1.5 hr)
 
-Day 9 (1.5 hr)
+Topics:
 
+Controlled vs uncontrolled inputs
 
-0–45 min: Redux fundamentals (store, actions, reducers)
+Simple validations
 
+Blur vs change validation
 
-45–90 min: Setup simple Redux counter example
+Task: Form with validation + error messages.
 
+Interview Questions:
 
-Day 10 (1.5 hr)
+Why are forms tricky in React?
 
+Day 7 — Error Boundaries + Suspense + Lazy Loading (2 hr)
 
-0–45 min: Redux Toolkit: slices, configureStore
+Topics:
 
+Error boundaries (what they can/can’t catch)
 
-45–90 min: Connect Redux state to a React component
+Suspense basics
 
+Lazy loading components
 
-Day 11 (1.5 hr)
+Task: Implement ErrorBoundary + lazy-loaded component.
 
+Interview Questions:
 
-0–45 min: React Router v6 basics (Routes, nested routes)
+Explain Suspense.
 
+Day 8 — Build Small Todo App (2 hr)
 
-45–90 min: Implement a multi-page navigation example
+Topics:
 
+State + hooks
 
-Day 12 (1.5 hr)
+Conditional UI
 
+Error boundary
 
-0–45 min: Route guards & programmatic navigation
+Lazy loading
 
+Interview Questions:
 
-45–90 min: Add protected route for logged-in user simulation
+How did you structure the app?
 
+📍 WEEK 2 — State Management & Routing
+Day 9 — Lifting State & Context API (1.5 hr)
 
-Day 13 (1.5 hr)
+Topics:
 
+Lifting shared state
 
-0–45 min: Component communication: prop drilling, HOC, render props
+Context API
 
+Context provider patterns
 
-45–90 min: Refactor a component using HOC / render props
+Task: Theme toggle using context.
 
+Interview Questions:
 
-Day 14 (2 hr)
+Context vs Redux?
 
+Limitations of Context?
 
-Build a CRUD app
+Day 10 — Redux Fundamentals (1.5 hr)
 
+Topics:
 
-Features: routing + Redux for state
+Store
 
+Actions
 
-Add basic API simulation (mock JSON)
+Reducers
 
+Dispatch flow
 
+Task: Redux counter.
 
-Week 3: Performance, Testing, and Ecosystem
-Day 15 (1.5 hr)
+Interview Questions:
 
+Why must reducers be pure?
 
-0–45 min: Performance optimizations: React.memo, useMemo, useCallback
+Day 11 — Redux Toolkit (1.5 hr)
 
+Topics:
 
-45–90 min: Apply optimizations in previous CRUD app
+Slices
 
+createSlice
 
-Day 16 (1.5 hr)
+configureStore
 
+createAsyncThunk
 
-0–45 min: Virtualization (react-window)
+Task: Connect Redux to UI.
 
+Interview Questions:
 
-45–90 min: Implement virtualized list in app
+RTK vs Redux?
 
+Day 12 — React Router v6 Basics (1.5 hr)
 
-Day 17 (1.5 hr)
+Topics:
 
+Routes
 
-0–45 min: Testing basics with Jest & React Testing Library
+Route layouts
 
+Nested routes
 
-45–90 min: Write unit tests for a component
+Task: 3-page navigation.
 
+Interview Questions:
 
-Day 18 (1.5 hr)
+How does client-side routing work?
 
+Day 13 — Protected Routes & Navigation (1.5 hr)
 
-0–45 min: Styling options: CSS Modules, Styled Components
+Topics:
 
+Private routes
 
-45–90 min: Apply styling to CRUD app
+Role-based access
 
+Programmatic navigation
 
-Day 19 (1.5 hr)
+Task: Mock protected route.
 
+Interview Questions:
 
-0–45 min: Material-UI / Ant Design: basic components
+How do you implement authentication in routing?
 
+Day 14 — Component Communication Patterns (1.5 hr)
 
-45–90 min: Replace some app UI with MUI components
+Topics:
 
+Prop drilling
 
-Day 20 (1.5 hr)
+HOCs
 
+Render props
 
-0–45 min: TypeScript basics: typing props & state
+Composition
 
+Task: Convert HOC → custom hook.
 
-45–90 min: Convert one component to TypeScript
+Interview Questions:
 
+Why are HOCs still used?
 
-Day 21 (2 hr)
+Day 15 — Build a CRUD App (2 hr)
 
+Topics:
 
-Enhance CRUD app with:
+Routing
 
+Redux
 
-TypeScript
+Mock API integration
 
+Interview Questions:
 
-Performance optimizations
+How did you manage async logic?
 
+📍 WEEK 3 — Performance, Testing & Styling
+Day 16 — React Performance Optimization (1.5 hr)
 
-Styling
+Topics:
 
+React.memo
 
+useMemo
 
+useCallback
 
+Avoiding unnecessary re-renders
 
-Week 4: Advanced Topics & Interview Prep
-Day 22 (1.5 hr)
+Task: Optimize CRUD app.
 
+Interview Questions:
 
-0–45 min: Advanced React patterns: Portals, forwardRef
+When NOT to use React.memo?
 
+Day 17 — List Virtualization (1.5 hr)
 
-45–90 min: Implement modal with portal
+Topics:
 
+react-window
 
-Day 23 (1.5 hr)
+Windowing
 
+Rendering huge lists efficiently
 
-0–45 min: Context composition, error handling patterns
+Task: Virtualized list.
 
+Interview Questions:
 
-45–90 min: Apply context + error boundary in mini project
+What is virtualization?
 
+Day 18 — Testing with Jest & RTL (1.5 hr)
 
-Day 24 (1.5 hr)
+Topics:
 
+Jest basics
 
-0–45 min: API handling: Axios, fetch, JWT token basics
+RTL testing queries
 
+Mocking API calls
 
-45–90 min: Fetch mock data & handle errors
+Task: Write tests for components.
 
+Interview Questions:
 
-Day 25 (1.5 hr)
+What should you test in React?
 
+Day 19 — Styling Approaches (1.5 hr)
 
-0–45 min: Behavioral interview prep: STAR method, project stories
+Topics:
 
+CSS Modules
 
-45–90 min: Prepare answers for 5 common React interview questions
+Styled Components
 
+CSS-in-JS pros & cons
 
-Day 26 (1.5 hr)
+Task: Style components both ways.
 
+Day 20 — UI Libraries: MUI / Ant Design (1.5 hr)
 
-0–45 min: Debugging & situational problem solving
+Topics:
 
+Common components
 
-45–90 min: Practice performance/bug scenarios on mini project
+Theme customization
 
+Grid & layout systems
 
-Day 27 (1.5 hr)
+Task: Replace CRUD UI with MUI.
 
+Day 21 — TypeScript in React (1.5 hr)
 
-0–45 min: React coding challenges (hooks, dynamic forms)
+Topics:
 
+Typing props & state
 
-45–90 min: Solve 2–3 small React problems
+useState typing
 
+Type-safe custom hooks
 
-Day 28 (1.5 hr)
+Task: Convert components to TS.
 
+📍 WEEK 4 — Advanced React + System Design
+Day 22 — Portals + forwardRef + Advanced Patterns (1.5 hr)
 
-0–45 min: System design basics for React apps (component splitting, state strategies)
+Topics:
 
+Portals
 
-45–90 min: Design component architecture for a medium app
+forwardRef
 
+Compound components
 
-Day 29 (1.5 hr)
+React architecture patterns
 
+Task: Build modal via portal.
 
-0–45 min: Review tricky concepts: useEffect nuances, Context vs Redux
+Day 23 — Context Composition + Error Handling Patterns (1.5 hr)
 
+Topics:
 
-45–90 min: Mock interview simulation: explain your CRUD app
+Multiple contexts
 
+Avoiding provider hell
 
-Day 30 (2 hr)
+API error handling strategies
 
+Task: Wrap app with multiple contexts.
 
-Full revision:
+Day 24 — API Handling + Axios/Fetch + JWT Flow (1.5 hr)
 
+Topics:
 
-Go through notes, mini-projects
+Axios vs Fetch
 
+JWT authentication flow
 
-Brush up core concepts, hooks, routing, Redux
+Interceptors
 
+Retry logic
 
-Prepare last-minute interview talking points
+Handling expired tokens
 
+Task: Build mock login flow.
 
+Day 25 — React 18 Concurrent Features (1.5 hr)
 
+Topics:
 
+Automatic batching
 
-✅ Tips for 1–2 hr/day plan:
+startTransition
 
+useDeferredValue
 
-Focus on hands-on coding, not just reading
+Suspense improvements
 
+Task: Add transition-based search bar.
 
-Keep mini-projects evolving week by week
+Day 26 — React Server Components (RSC) Basics (1.5 hr)
 
+Topics:
 
-Write down common pitfalls for each concept
+What are RSCs?
 
+Server vs Client components
 
+Limitations
 
-If you want, I can also make a visual 30-day calendar chart showing topics, hours, and projects, which is easier to follow day by day.
-Do you want me to create that chart next?
+Why React introduced RSC
+
+Task: Create a small RSC component.
+
+Day 27 — Next.js Basics (2 hr)
+
+Topics:
+
+App Router
+
+File-based routing
+
+Layouts
+
+Server Actions
+
+Data fetching with RSC
+
+Metadata
+
+Task: Build 3 Next.js pages.
+
+Day 28 — Next.js API + Auth + Deployment (2 hr)
+
+Topics:
+
+Next.js API routes
+
+Authentication patterns
+
+Deploy to Vercel
+
+Env variables
+
+Task: Build login + profile page.
+
+Day 29 — React System Design (1.5 hr)
+
+Topics:
+
+Component architecture
+
+State placement strategies
+
+Performance planning
+
+Folder structures
+
+Large scale patterns
+
+Task: Design a medium app (diagram).
+
+Day 30 — Debugging Deep Dive (1.5 hr)
+
+Topics:
+
+React DevTools
+
+Highlight re-renders
+
+Common bugs
+
+Tracing stale closures & infinite loops
+
+Task: Debug intentionally broken code.
+
+📍 WEEK 5 — Interview Mastery
+Day 31 — Coding Challenges (1.5 hr)
+
+Topics:
+
+Hooks challenges
+
+Dynamic forms
+
+Debounce + throttle
+
+Timer components
+
+Task: Solve 3 challenges.
+
+Day 32 — Mock React Interview #1 (2 hr)
+
+Theory rounds
+
+Practical coding
+
+Explain your projects
+
+Optimize code live
+
+Day 33 — Mock React Interview #2 (1.5 hr)
+
+System design + architecture
+
+Tradeoff questions
+
+Redux vs Context
+
+Performance strategies
+
+Day 34 — Review Tricky Concepts (1.5 hr)
+
+Topics:
+
+useEffect pitfalls
+
+Keyed lists
+
+Suspense pitfalls
+
+Context vs Redux
+
+Performance traps
+
+Day 35 — Final Revision (2 hr)
+
+Topics:
+
+Review all notes
+
+Review all projects
+
+Review all interview questions
+
+Prepare personal project stories
+
+🎯 FINAL RESULT
+
+Following this 35-day roadmap, you will be fully prepared for React + Redux + Next.js + System Design + Coding + Behavioral interviews.

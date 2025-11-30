@@ -1,0 +1,569 @@
+Day 1 — JSX, Virtual DOM, Components
+
+Interview Questions:
+
+What is JSX?
+
+What is Virtual DOM?
+
+Why is React declarative?
+
+Difference between functional & class components?
+
+Cross Questions:
+
+How does reconciliation work?
+
+What is the diffing algorithm?
+
+Why can’t browsers read JSX directly?
+
+How does Babel convert JSX?
+
+Day 2 — Props, State & Events
+
+Interview Questions:
+
+Props vs state?
+
+Why state is immutable?
+
+How are events handled in React?
+
+Cross Questions:
+
+How does React batch updates?
+
+Why re-renders happen when state updates?
+
+What happens if you mutate state directly?
+
+Day 3 — Conditional Rendering + Lists & Keys
+
+Interview Questions:
+
+Why are keys important?
+
+Why index should not be used as key?
+
+Different ways to conditionally render?
+
+Cross Questions:
+
+How does React identify list items?
+
+What if keys change frequently?
+
+Why consistent keys are crucial for performance?
+
+Day 4 — Lifecycle (Class) + useEffect
+
+Interview Questions:
+
+Explain component lifecycle phases.
+
+Difference between componentDidMount & useEffect?
+
+Why useEffect runs twice in Strict Mode?
+
+Cross Questions:
+
+What happens if dependency array missing?
+
+Why effects cleanup is needed?
+
+How does React avoid stale closures?
+
+Day 5 — useRef, useMemo, useCallback + Custom Hooks
+
+Interview Questions:
+
+When useMemo vs useCallback?
+
+How does useRef differ from state?
+
+Why custom hooks?
+
+Cross Questions:
+
+Why useMemo sometimes gives no performance gain?
+
+Can useRef trigger re-renders?
+
+How to isolate business logic using custom hooks?
+
+Day 6 — Forms + Validation
+
+Interview Questions:
+
+Controlled vs uncontrolled inputs?
+
+Why is form handling tricky in React?
+
+How to implement basic validation?
+
+Cross Questions:
+
+Why use onChange vs onBlur?
+
+Why uncontrolled components are useful for performance?
+
+Day 7 — Error Boundaries + Suspense + Lazy Loading
+
+Interview Questions:
+
+What can error boundaries catch?
+
+How does Suspense work?
+
+What is lazy loading?
+
+Cross Questions:
+
+Why error boundaries don’t catch async errors?
+
+Can Suspense be used for data fetching? (React 18 answer: Yes via RSC)
+
+Day 8 — Build Todo App
+
+Interview Questions:
+
+How did you structure the Todo app?
+
+How did you manage state?
+
+How would you optimize it?
+
+Cross Questions:
+
+Where would you lift state up?
+
+Could Context API improve it?
+
+What are potential performance bottlenecks?
+
+📍 WEEK 2 — State Management & Routing
+Day 9 — Lifting State + Context API
+
+Interview Questions:
+
+When do you lift state up?
+
+What is Context API?
+
+Context vs Redux?
+
+Cross Questions:
+
+Why Context causes unnecessary re-renders?
+
+How to split multiple contexts?
+
+Why not use Context for large apps?
+
+Day 10 — Redux Fundamentals
+
+Interview Questions:
+
+Why Redux?
+
+Explain Redux data flow.
+
+Why reducers must be pure?
+
+Cross Questions:
+
+Why immutability matters?
+
+What is dispatch under the hood?
+
+Why store is single-source-of-truth?
+
+Day 11 — Redux Toolkit
+
+Interview Questions:
+
+Difference between Redux & RTK?
+
+What is a slice?
+
+What does createAsyncThunk do?
+
+Cross Questions:
+
+How does RTK simplify reducers?
+
+What is immer and how RTK uses it?
+
+Why RTK avoids boilerplate?
+
+Day 12 — React Router Basics
+
+Interview Questions:
+
+How does client-side routing work?
+
+What are nested routes?
+
+How does <Outlet> work?
+
+Cross Questions:
+
+Why SPA routers use history API?
+
+What are layout routes?
+
+Day 13 — Protected Routes + Navigation
+
+Interview Questions:
+
+How to implement private routes?
+
+How to navigate programmatically?
+
+Cross Questions:
+
+How to persist auth in localStorage?
+
+What happens on page refresh for private routes?
+
+Day 14 — Component Communication Patterns
+
+Interview Questions:
+
+What is prop drilling?
+
+HOC vs Render Props?
+
+Why composition is preferred?
+
+Cross Questions:
+
+Why HOCs still used in older codebases?
+
+How custom hooks replace HOCs?
+
+Day 15 — Build CRUD App
+
+Interview Questions:
+
+How did you handle global state?
+
+How does Redux interact with API?
+
+How did you structure slices?
+
+Cross Questions:
+
+Why use createAsyncThunk?
+
+What is optimistic update?
+
+📍 WEEK 3 — Performance, Testing & Styling
+Day 16 — Performance Optimization
+
+Interview Questions:
+
+When does React re-render?
+
+What is React.memo?
+
+useMemo vs memo?
+
+Cross Questions:
+
+Why unnecessary re-renders happen?
+
+How does React decide to skip renders?
+
+Why memoization sometimes worsens performance?
+
+Day 17 — List Virtualization
+
+Interview Questions:
+
+What is virtualization?
+
+Why is rendering long lists slow?
+
+Cross Questions:
+
+How react-window works internally?
+
+How to calculate row heights?
+
+Day 18 — Jest + RTL
+
+Interview Questions:
+
+What should you test in React?
+
+Difference between unit & integration tests?
+
+RTL vs Enzyme?
+
+Cross Questions:
+
+How to mock fetch?
+
+Why queryBy vs getBy?
+
+Why RTL focuses on behavior?
+
+Day 19 — Styling Approaches
+
+Interview Questions:
+
+CSS Modules vs Styled Components?
+
+What is CSS-in-JS?
+
+Cross Questions:
+
+Why CSS-in-JS impacts performance?
+
+How does Styled Components generate classes?
+
+Day 20 — MUI / AntD
+
+Interview Questions:
+
+Pros & cons of UI libraries?
+
+How to customize MUI theme?
+
+Cross Questions:
+
+What is tree-shaking in UI libraries?
+
+How to override component styles?
+
+Day 21 — TypeScript in React
+
+Interview Questions:
+
+How to type props?
+
+Why React.FC discouraged?
+
+How to type custom hooks?
+
+Cross Questions:
+
+How to type children?
+
+How to type event handlers?
+
+📍 WEEK 4 — Advanced Topics
+Day 22 — Portals + forwardRef + Composition
+
+Interview Questions:
+
+What are portals?
+
+Why forwardRef?
+
+What is compound component pattern?
+
+Cross Questions:
+
+Why modals use portals?
+
+What if ref changes?
+
+When NOT to use forwardRef?
+
+Day 23 — Multiple Contexts + Error Handling
+
+Interview Questions:
+
+How to avoid provider hell?
+
+How to handle API errors gracefully?
+
+Cross Questions:
+
+Why context composition?
+
+Why error boundaries fail for async code?
+
+Day 24 — API Handling + JWT Authentication
+
+Interview Questions:
+
+Explain JWT auth flow.
+
+Axios vs fetch?
+
+How do interceptors work?
+
+Cross Questions:
+
+Why refresh tokens needed?
+
+How to prevent token theft?
+
+Day 25 — React 18 Concurrent Features
+
+Interview Questions:
+
+What is automatic batching?
+
+What is startTransition?
+
+What is useDeferredValue?
+
+Cross Questions:
+
+How concurrent features improve UX?
+
+Why transitions prevent blocking UI?
+
+Day 26 — React Server Components (RSC)
+
+Interview Questions:
+
+What are server components?
+
+How do RSC differ from client components?
+
+Why RSC introduced?
+
+Cross Questions:
+
+Why server components reduce bundle size?
+
+Why server components cannot use useState/useEffect?
+
+Day 27 — Next.js (App Router Basics)
+
+Interview Questions:
+
+File-based routing?
+
+Layouts & templates?
+
+Server vs Client components?
+
+Cross Questions:
+
+Why Next.js uses RSC by default?
+
+Why server actions are beneficial?
+
+Day 28 — Next.js API + Auth + Deployment
+
+Interview Questions:
+
+Next.js API routes?
+
+How SSR differs from CSR?
+
+How deployment works on Vercel?
+
+Cross Questions:
+
+Why use dynamic routes?
+
+How to secure API routes?
+
+Day 29 — React System Design
+
+Interview Questions:
+
+How to architect a scalable React app?
+
+How to decide where state should live?
+
+Pros/cons of various state solutions?
+
+Cross Questions:
+
+Difference between client/server cache?
+
+Why splitting components matters?
+
+Why folder structure impacts scalability?
+
+Day 30 — Debugging
+
+Interview Questions:
+
+How to debug re-renders?
+
+Tools for debugging React?
+
+Cross Questions:
+
+What is “why-did-you-render”?
+
+How to identify infinite loops?
+
+📍 WEEK 5 — Interview Mastery
+Day 31 — Coding Challenges
+
+Interview Questions:
+
+Build a custom hook
+
+Dynamic controlled form
+
+Debounce in React
+
+Cross Questions:
+
+How to memoize fields?
+
+Why form re-renders often?
+
+Day 32 — Mock Interview #1
+
+Focus: Core + Hooks + State + Routing
+
+Cross Questions:
+
+Why component re-renders unexpectedly?
+
+Why useEffect cleanup needed?
+
+Day 33 — Mock Interview #2
+
+Focus: Redux + Performance + System Design
+
+Cross Questions:
+
+Why Redux Toolkit avoids bugs?
+
+How to handle large component trees?
+
+Day 34 — Tricky Concept Revision
+
+Interview Questions:
+
+Why useEffect runs twice?
+
+Context vs Redux?
+
+Why React.memo sometimes fails?
+
+Cross Questions:
+
+What causes stale state?
+
+How React batches updates?
+
+Day 35 — Final Revision
+
+Questions:
+
+Top 50 React questions
+
+Top 20 Hooks questions
+
+Top 15 performance questions
+
+Top 10 system design questions
+
+Cross Questions:
+
+Deep follow-ups from all above

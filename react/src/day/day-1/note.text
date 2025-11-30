@@ -1,0 +1,34 @@
+Day 1 (1.5 hr)
+
+0–45 min: React basics (JSX, virtual DOM, functional vs class components)
+
+1. JSX => JSX stand for javascript XML, which allow write html like css in javascript.
+2. Virtual DOM => virtual dom is a shallow copy of real dom, useing deffing algorithms update only need full changes in real dom.
+3. Functional components => Functional component in react is javascript function which return jsx. which allow write html like code in javascript. With the introduction of react hook,  functional component can also handle state and side effect, making as capable as class component.
+4. Class components => 
+
+
+45–90 min: Props & state, event handling, simple examples
+
+1. Props & state => Props and state is core concept in react. in first view it's seems similer but sarve diffirent purpos. props is use to pass data from perent to child component and it is immutable. while state use to manage state within component and it is mutable.
+2. event handling => 
+3. simple example =>
+
+  // props // 
+  const childComponent = (name)=>{
+    return (
+        <div>
+        my name is {name}
+        </div>
+    )
+  }
+  const parentComponent = ()=>{
+      const [name,setName] = useState("Ram")
+    return (
+        <div>
+        <childComponent name={name}/>
+        </div>
+    )
+  }
+
+  

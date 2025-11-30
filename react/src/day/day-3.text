@@ -1,0 +1,26 @@
+Day 3 (1.5 hr)
+
+
+0–45 min: Class component lifecycle methods
+
+
+
+
+45–90 min: Hooks useState & useEffect, simple useEffect demo
+
+1. Hooks =>   Hooks are spacial functions that let use react features without class components.
+2. useState =>useState use to manage component state, it's return array with two value, current state and functions to update the current state.
+   cons [state, setState] = useState("");
+   use it when you component need store or update data.
+3. useEffect => useEffect is react hooks use to manage side effect in functional component.
+ comman side effect 
+ data fetching,
+ event subscribing 
+
+  useEffect(()=>{
+    write side effect here..
+    return ()=>{
+     write cleanup function here...
+    }
+  },[])
+4.
