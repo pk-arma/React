@@ -15,10 +15,13 @@ Task: Convert simple HTML UI to React.
 Interview Questions:
 
 What is JSX?
+:- JSX is stand for javascript xml,it's allow to write html like code in javascript.
 
 How does Virtual DOM improve performance?
+:- useing diffing algorthims update only neseccary change in real dom, improve performance.
 
 Why is React declarative?
+
 
 Day 2 — Props, State & Event Handling (1.5 hr)
 
@@ -35,6 +38,7 @@ Task: Build a counter component.
 Interview Questions:
 
 Why is state immutable?
+:-
 
 Difference between props & state?
 
