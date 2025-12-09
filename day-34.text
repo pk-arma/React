@@ -1,0 +1,32 @@
+Day 34 — Tricky Concept Revision
+
+Interview Questions:
+
+Why useEffect runs twice?
+
+Context vs Redux?
+
+Why React.memo sometimes fails?
+
+Cross Questions:
+
+What causes stale state?
+
+How React batches updates?
+
+
+
+
+Day 34 — Review Tricky Concepts (1.5 hr)
+
+Topics:
+
+useEffect pitfalls
+
+Keyed lists
+
+Suspense pitfalls
+
+Context vs Redux
+
+Performance traps
