@@ -1,0 +1,39 @@
+Day 32 — Mock React Interview #1 (2 hr)
+
+Theory rounds
+
+Practical coding
+
+Explain your projects
+
+:- Sure, let me walk you through the technical architecture of my project, which is a Contractor Material Management System.
+    
+    The frontend architecture is built on Next.js App Router, which allowed us to use server-side rendering where needed for performance and client-side rendering for more interactive pages. The UI is fully component-driven and styled with Tailwind CSS, giving us a clean, responsive interface without heavy CSS overhead.
+
+    From a data and state perspective, the system follows a dual-state architecture.
+    Zustand manages all local UI state—things like filters, modals, and layout controls—because it’s extremely lightweight and avoids unnecessary re-renders.
+    For server-side state, I used TanStack Query, which handles data fetching, caching, background refetching, pagination, and automatic retries. This allowed us to maintain real-time inventory data efficiently as the system scales.
+
+    All API communication is handled through a central Axios instance with interceptors, where we inject authentication tokens and manage API-level errors globally. We also pair this with React Suspense and custom error boundaries, so the UI always handles loading and failure states gracefully.
+
+    One of the key parts of the system is our data-heavy screens, especially inventory tables. For that, we implemented TanStack Table, which gave us advanced features like server-side sorting, filtering, pagination, and custom cell rendering. This keeps performance high even when the dataset grows.
+
+    On the security side, the project includes full route protection and role-based access control. Using Next.js middleware, we block unauthenticated users at the routing level. Inside the application, features are conditionally rendered based on user roles such as admin, manager, or contractor, ensuring permissions are enforced both at the UI and API level.
+
+    Overall, the architecture is designed to be modular, scalable, and very efficient.
+    Next.js gives us a strong routing and rendering foundation, TanStack Query ensures seamless data flow, Zustand keeps UI state lightweight, and Axios with interceptors centralizes network reliability.
+    This combination allowed us to build a stable, maintainable material management system that performs well even under heavy data usage.
+
+Optimize code live
+
+Day 32 — Mock Interview #1
+
+Focus: Core + Hooks + State + Routing
+
+Cross Questions:
+
+Why component re-renders unexpectedly?
+
+Why useEffect cleanup needed?
+Why useEffect cleanup needed?
+useEffect cleanup is needed to remove subscriptions, listeners, or ongoing side effects to prevent memory leaks and unwanted behavior when a component re-renders or unmounts.      
