@@ -1,0 +1,48 @@
+Build a custom hook
+
+import {createContext,useContext} from 'react'
+
+  const useTheme = (currentTheme)=>{
+     const [theme,setTheme] = useState(currentTheme||"Light");
+     const changeTheme =()=>{
+        setTheme((prev)=>prev==="Light"?"Dark":"Light")
+     } 
+
+     return {theme,changeTheme}
+  }
+
+const ThemeContext = createContext()
+
+const ThemeProvider = ({children})=>{
+    const {theme,changeTheme} = useTheme("Dark")
+  return (
+     <ThemeContext.provider value={{theme,changeTheme}}>
+     {children}
+     </ThemeContext.provider>
+  )
+}
+export const useThemeContext =()=> useContext(ThemeContext);
+
+
+Dynamic controlled form
+
+Debounce in React
+
+Cross Questions:
+
+How to memoize fields?
+
+Why form re-renders often?
+
+
+Topics:
+
+Hooks challenges
+
+Dynamic forms
+
+Debounce + throttle
+
+Timer components
+
+Task: Solve 3 challenges.
